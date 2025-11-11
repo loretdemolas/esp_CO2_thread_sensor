@@ -1,0 +1,17 @@
+idf_component_register(
+    SRCS 
+        "scd4x_i2c.c"
+        "scd4x_i2c_hal.c"
+        "sensirion_i2c_esp32_config.c"
+        "sensirion_common.c"
+        "sensirion_i2c_hal.c"
+        "i2cdev.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        esp_driver_i2c
+        driver
+        esp_timer
+        freertos
+        log
+)

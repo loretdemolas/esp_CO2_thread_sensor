@@ -1,0 +1,16 @@
+{
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+    "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c17",
+    "files.exclude": {
+        "**/.git": true,
+        "**/build": false
+    },
+    "files.associations": {
+        "esp_netif_types.h": "c",
+        "esp_openthread_cli.h": "c"
+    },
+    "idf.port": "/dev/tty.usbmodem2301",
+    "idf.flashType": "UART"
+}
