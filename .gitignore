@@ -1,0 +1,59 @@
+# ------------------------------------------------------------------------------
+# ESP-IDF project .gitignore
+# ------------------------------------------------------------------------------
+
+# Build output
+/build/
+/project_description.json
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+idf.build*
+
+# ESP-IDF specific temp files
+dependencies.lock
+.espressif/
+dist/
+tools/idf_py_actions.*
+*.elf
+*.bin
+*.map
+*.log
+*.tmp
+*.pyc
+*.pyo
+*.pdb
+
+# Flash binaries (don't version unless you intentionally track releases)
+*.bin
+*.elf
+*.hex
+*.map
+
+# VSCode
+.vscode/
+*.code-workspace
+
+.github/copilot-instructions.md
+
+# CLion / JetBrains IDEs
+.idea/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Other potential local artifacts
+__pycache__/
+*.swp
+*.swo
+*.bak
+.github/copilot-instructions.md
+
+managed_components/*
