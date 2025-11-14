@@ -3,6 +3,7 @@ idf_component_register(
         "main.c"
         "sensors.c"
         "openthread_manager.c"
+        "scd4x.c"
     INCLUDE_DIRS "." 
     REQUIRES
         openthread
@@ -10,6 +11,4 @@ idf_component_register(
         esp_netif
         vfs
         driver
-        scd4x
-        i2cdev
 )
