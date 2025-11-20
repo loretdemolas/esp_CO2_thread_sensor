@@ -47,7 +47,7 @@ static void sensor_task(void *arg) {
     bool data_ready = false;
 
     // Start periodic measurement (5s default)
-    ESP_LOGI(TAG, " starting periodic measurement on SCD4x...");
+    ESP_LOGI(TAG, "Starting periodic measurement on SCD4x...");
     scd4x_start_periodic_measurement(&scd4x_handle);
 
     while (1) {
@@ -58,7 +58,6 @@ static void sensor_task(void *arg) {
             printf("CO2: %.0f ppm | Temp: %.2f°C | RH: %.2f%%\n", (float)co2_raw, temp_c, hum_rh);
         }
 
-            // Optionally, reset data_ready flag if your sensor library allows it
             data_ready = false;
         }
 
@@ -66,7 +65,7 @@ static void sensor_task(void *arg) {
         vTaskDelay(pdMS_TO_TICKS(500));  // 0.5s polling
     }
 }
-\
+
 /* Start FreeRTOS sensor task */
 void start_sensor_task(void) {
     xTaskCreate(sensor_task, "sensor_task", 4096, NULL, 5, NULL);
