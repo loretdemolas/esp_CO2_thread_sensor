@@ -13,7 +13,7 @@
 
 static const char *TAG = "scd4x_v2";
 
-/* Commands from datasheet (same as your legacy file) */
+/* Commands from datasheet */
 #define CMD_START_PERIODIC_MEASUREMENT             (0x21B1)
 #define CMD_READ_MEASUREMENT                       (0xEC05)
 #define CMD_STOP_PERIODIC_MEASUREMENT              (0x3F86)
