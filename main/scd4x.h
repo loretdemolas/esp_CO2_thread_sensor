@@ -1,7 +1,5 @@
 /*
  * scd4x.h - SCD4x driver (ESP-IDF I2C v2)
- *
- * Minimal, feature-complete header for the ported driver.
  */
 #pragma once
 
